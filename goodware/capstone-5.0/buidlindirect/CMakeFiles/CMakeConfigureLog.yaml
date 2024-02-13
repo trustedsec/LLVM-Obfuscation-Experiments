@@ -1,0 +1,265 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:206 (message)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      The target system is: Windows - 10.0 - AMD64
+      The host system is: Linux - 6.6.14-200.fc39.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/clang-cl 
+      Build flags: -Xclang;-fpass-plugin=/opt/winsdk/llvm-passes/libIndirectCall.so
+      Id flags:  
+      
+      The output was:
+      1
+      clang-cl: warning: unable to find a Visual Studio installation; try running Clang from a developer command prompt [-Wmsvc-not-found]
+      clang-cl: error: unable to execute command: Executable "link.exe" doesn't exist!
+      clang-cl: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang-cl 
+      Build flags: -Xclang;-fpass-plugin=/opt/winsdk/llvm-passes/libIndirectCall.so
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is Clang, found in:
+        /opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/3.27.7/CompilerIdC/CMakeCCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/clang-cl 
+      Build flags: /winsdkdir;/opt/winsdk/sdk;/vctoolsdir;/opt/winsdk/crt
+      Id flags:  
+      
+      The output was:
+      1
+      clang-cl: error: unable to execute command: Executable "link.exe" doesn't exist!
+      clang-cl: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang-cl 
+      Build flags: /winsdkdir;/opt/winsdk/sdk;/vctoolsdir;/opt/winsdk/crt
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is Clang, found in:
+        /opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:24 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-5ZRgrY"
+      binary: "/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-5ZRgrY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libIndirectCall.so /winsdkdir /opt/winsdk/sdk  /vctoolsdir /opt/winsdk/crt /DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/winsdkdir:/opt/winsdk/sdk  /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-5ZRgrY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_57742/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_57742.dir/build.make CMakeFiles/cmTC_57742.dir/build
+        gmake[1]: Entering directory '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-5ZRgrY'
+        Building C object CMakeFiles/cmTC_57742.dir/CMakeCCompilerABI.c.obj
+        /usr/bin/clang-cl  /nologo  -imsvc/opt/winsdk/crt/include/CodeAnalysis/ConcurrencyCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/CppCoreCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/EnumIndex -imsvc/opt/winsdk/crt/include/CodeAnalysis/HResultCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/VariantClear -imsvc/opt/winsdk/crt/include/CodeAnalysis -imsvc/opt/winsdk/crt/include -imsvc/opt/winsdk/crt/include/msclr -imsvc/opt/winsdk/crt/include/msclr/com -imsvc/opt/winsdk/sdk/include/cppwinrt/winrt -imsvc/opt/winsdk/sdk/include/cppwinrt/winrt/impl -imsvc/opt/winsdk/sdk/include/shared -imsvc/opt/winsdk/sdk/include/shared/ndis -imsvc/opt/winsdk/sdk/include/shared/netcx/shared/net -imsvc/opt/winsdk/sdk/include/shared/netcx/shared/net/wifi -imsvc/opt/winsdk/sdk/include/ucrt -imsvc/opt/winsdk/sdk/include/ucrt/sys -imsvc/opt/winsdk/sdk/include/um -imsvc/opt/winsdk/sdk/include/um/alljoyn_c -imsvc/opt/winsdk/sdk/include/um/gl -imsvc/opt/winsdk/sdk/include/um/qcc -imsvc/opt/winsdk/sdk/include/um/qcc/windows -imsvc/opt/winsdk/sdk/include/um/winsqlite -imsvc/opt/winsdk/sdk/include/winrt -imsvc/opt/winsdk/sdk/include/winrt/wrl -imsvc/opt/winsdk/sdk/include/winrt/wrl/wrappers -Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libIndirectCall.so /winsdkdir /opt/winsdk/sdk  /vctoolsdir /opt/winsdk/crt /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /FoCMakeFiles/cmTC_57742.dir/CMakeCCompilerABI.c.obj /FdCMakeFiles/cmTC_57742.dir/ -c -- /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Linking C executable cmTC_57742.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57742.dir/link.txt --verbose=1
+        /usr/bin/cmake -E vs_link_exe --intdir=CMakeFiles/cmTC_57742.dir --rc=/usr/bin/llvm-rc --mt=/usr/bin/llvm-mt --manifests -- /usr/bin/lld-link /nologo @CMakeFiles/cmTC_57742.dir/objects1.rsp  /out:cmTC_57742.exe /implib:cmTC_57742.lib /pdb:/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-5ZRgrY/cmTC_57742.pdb /version:0.0 /winsdkdir:/opt/winsdk/sdk  /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64  /debug /INCREMENTAL /subsystem:console 
+        Visual Studio Incremental Link without manifests
+        LINK:
+        /usr/bin/lld-link /nologo @CMakeFiles/cmTC_57742.dir/objects1.rsp /out:cmTC_57742.exe /implib:cmTC_57742.lib /pdb:/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-5ZRgrY/cmTC_57742.pdb /version:0.0 /winsdkdir:/opt/winsdk/sdk /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64 /debug /INCREMENTAL /subsystem:console
+        gmake[1]: Leaving directory '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-5ZRgrY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:24 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-xh870F"
+      binary: "/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-xh870F"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/winsdkdir /opt/winsdk/sdk  /vctoolsdir /opt/winsdk/crt /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/winsdkdir:/opt/winsdk/sdk  /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-xh870F'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba492/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ba492.dir/build.make CMakeFiles/cmTC_ba492.dir/build
+        gmake[1]: Entering directory '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-xh870F'
+        Building CXX object CMakeFiles/cmTC_ba492.dir/CMakeCXXCompilerABI.cpp.obj
+        /usr/bin/clang-cl  /nologo -TP  -imsvc/opt/winsdk/crt/include/CodeAnalysis/ConcurrencyCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/CppCoreCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/EnumIndex -imsvc/opt/winsdk/crt/include/CodeAnalysis/HResultCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/VariantClear -imsvc/opt/winsdk/crt/include/CodeAnalysis -imsvc/opt/winsdk/crt/include -imsvc/opt/winsdk/crt/include/msclr -imsvc/opt/winsdk/crt/include/msclr/com -imsvc/opt/winsdk/sdk/include/cppwinrt/winrt -imsvc/opt/winsdk/sdk/include/cppwinrt/winrt/impl -imsvc/opt/winsdk/sdk/include/shared -imsvc/opt/winsdk/sdk/include/shared/ndis -imsvc/opt/winsdk/sdk/include/shared/netcx/shared/net -imsvc/opt/winsdk/sdk/include/shared/netcx/shared/net/wifi -imsvc/opt/winsdk/sdk/include/ucrt -imsvc/opt/winsdk/sdk/include/ucrt/sys -imsvc/opt/winsdk/sdk/include/um -imsvc/opt/winsdk/sdk/include/um/alljoyn_c -imsvc/opt/winsdk/sdk/include/um/gl -imsvc/opt/winsdk/sdk/include/um/qcc -imsvc/opt/winsdk/sdk/include/um/qcc/windows -imsvc/opt/winsdk/sdk/include/um/winsqlite -imsvc/opt/winsdk/sdk/include/winrt -imsvc/opt/winsdk/sdk/include/winrt/wrl -imsvc/opt/winsdk/sdk/include/winrt/wrl/wrappers /winsdkdir /opt/winsdk/sdk  /vctoolsdir /opt/winsdk/crt /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /FoCMakeFiles/cmTC_ba492.dir/CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles/cmTC_ba492.dir/ -c -- /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Linking CXX executable cmTC_ba492.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba492.dir/link.txt --verbose=1
+        /usr/bin/cmake -E vs_link_exe --intdir=CMakeFiles/cmTC_ba492.dir --rc=/usr/bin/llvm-rc --mt=/usr/bin/llvm-mt --manifests -- /usr/bin/lld-link /nologo @CMakeFiles/cmTC_ba492.dir/objects1.rsp  /out:cmTC_ba492.exe /implib:cmTC_ba492.lib /pdb:/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-xh870F/cmTC_ba492.pdb /version:0.0 /winsdkdir:/opt/winsdk/sdk  /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64  /debug /INCREMENTAL /subsystem:console 
+        Visual Studio Incremental Link without manifests
+        LINK:
+        /usr/bin/lld-link /nologo @CMakeFiles/cmTC_ba492.dir/objects1.rsp /out:cmTC_ba492.exe /implib:cmTC_ba492.lib /pdb:/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-xh870F/cmTC_ba492.pdb /version:0.0 /winsdkdir:/opt/winsdk/sdk /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64 /debug /INCREMENTAL /subsystem:console
+        gmake[1]: Leaving directory '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-xh870F'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
+      - "/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake:121 (_record_compiler_features_cxx)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:24 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-YBzy91"
+      binary: "/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-YBzy91"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/winsdkdir /opt/winsdk/sdk  /vctoolsdir /opt/winsdk/crt /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/winsdkdir:/opt/winsdk/sdk  /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-YBzy91'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8810/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d8810.dir/build.make CMakeFiles/cmTC_d8810.dir/build
+        gmake[1]: Entering directory '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-YBzy91'
+        Building CXX object CMakeFiles/cmTC_d8810.dir/feature_tests.cxx.obj
+        /usr/bin/clang-cl  /nologo -TP  -imsvc/opt/winsdk/crt/include/CodeAnalysis/ConcurrencyCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/CppCoreCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/EnumIndex -imsvc/opt/winsdk/crt/include/CodeAnalysis/HResultCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/VariantClear -imsvc/opt/winsdk/crt/include/CodeAnalysis -imsvc/opt/winsdk/crt/include -imsvc/opt/winsdk/crt/include/msclr -imsvc/opt/winsdk/crt/include/msclr/com -imsvc/opt/winsdk/sdk/include/cppwinrt/winrt -imsvc/opt/winsdk/sdk/include/cppwinrt/winrt/impl -imsvc/opt/winsdk/sdk/include/shared -imsvc/opt/winsdk/sdk/include/shared/ndis -imsvc/opt/winsdk/sdk/include/shared/netcx/shared/net -imsvc/opt/winsdk/sdk/include/shared/netcx/shared/net/wifi -imsvc/opt/winsdk/sdk/include/ucrt -imsvc/opt/winsdk/sdk/include/ucrt/sys -imsvc/opt/winsdk/sdk/include/um -imsvc/opt/winsdk/sdk/include/um/alljoyn_c -imsvc/opt/winsdk/sdk/include/um/gl -imsvc/opt/winsdk/sdk/include/um/qcc -imsvc/opt/winsdk/sdk/include/um/qcc/windows -imsvc/opt/winsdk/sdk/include/um/winsqlite -imsvc/opt/winsdk/sdk/include/winrt -imsvc/opt/winsdk/sdk/include/winrt/wrl -imsvc/opt/winsdk/sdk/include/winrt/wrl/wrappers /winsdkdir /opt/winsdk/sdk  /vctoolsdir /opt/winsdk/crt /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd   -std:c++14 /FoCMakeFiles/cmTC_d8810.dir/feature_tests.cxx.obj /FdCMakeFiles/cmTC_d8810.dir/ -c -- /opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-YBzy91/feature_tests.cxx
+        Linking CXX executable cmTC_d8810.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8810.dir/link.txt --verbose=1
+        /usr/bin/cmake -E vs_link_exe --intdir=CMakeFiles/cmTC_d8810.dir --rc=/usr/bin/llvm-rc --mt=/usr/bin/llvm-mt --manifests -- /usr/bin/lld-link /nologo @CMakeFiles/cmTC_d8810.dir/objects1.rsp  /out:cmTC_d8810.exe /implib:cmTC_d8810.lib /pdb:/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-YBzy91/cmTC_d8810.pdb /version:0.0 /winsdkdir:/opt/winsdk/sdk  /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link without manifests
+        LINK:
+        /usr/bin/lld-link /nologo @CMakeFiles/cmTC_d8810.dir/objects1.rsp /out:cmTC_d8810.exe /implib:cmTC_d8810.lib /pdb:/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-YBzy91/cmTC_d8810.pdb /version:0.0 /winsdkdir:/opt/winsdk/sdk /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+        gmake[1]: Leaving directory '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-YBzy91'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
+      - "/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake:129 (_record_compiler_features_cxx)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:24 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-acd0yr"
+      binary: "/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-acd0yr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/winsdkdir /opt/winsdk/sdk  /vctoolsdir /opt/winsdk/crt /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/winsdkdir:/opt/winsdk/sdk  /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-acd0yr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_54d70/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_54d70.dir/build.make CMakeFiles/cmTC_54d70.dir/build
+        gmake[1]: Entering directory '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-acd0yr'
+        Building CXX object CMakeFiles/cmTC_54d70.dir/feature_tests.cxx.obj
+        /usr/bin/clang-cl  /nologo -TP  -imsvc/opt/winsdk/crt/include/CodeAnalysis/ConcurrencyCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/CppCoreCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/EnumIndex -imsvc/opt/winsdk/crt/include/CodeAnalysis/HResultCheck -imsvc/opt/winsdk/crt/include/CodeAnalysis/VariantClear -imsvc/opt/winsdk/crt/include/CodeAnalysis -imsvc/opt/winsdk/crt/include -imsvc/opt/winsdk/crt/include/msclr -imsvc/opt/winsdk/crt/include/msclr/com -imsvc/opt/winsdk/sdk/include/cppwinrt/winrt -imsvc/opt/winsdk/sdk/include/cppwinrt/winrt/impl -imsvc/opt/winsdk/sdk/include/shared -imsvc/opt/winsdk/sdk/include/shared/ndis -imsvc/opt/winsdk/sdk/include/shared/netcx/shared/net -imsvc/opt/winsdk/sdk/include/shared/netcx/shared/net/wifi -imsvc/opt/winsdk/sdk/include/ucrt -imsvc/opt/winsdk/sdk/include/ucrt/sys -imsvc/opt/winsdk/sdk/include/um -imsvc/opt/winsdk/sdk/include/um/alljoyn_c -imsvc/opt/winsdk/sdk/include/um/gl -imsvc/opt/winsdk/sdk/include/um/qcc -imsvc/opt/winsdk/sdk/include/um/qcc/windows -imsvc/opt/winsdk/sdk/include/um/winsqlite -imsvc/opt/winsdk/sdk/include/winrt -imsvc/opt/winsdk/sdk/include/winrt/wrl -imsvc/opt/winsdk/sdk/include/winrt/wrl/wrappers /winsdkdir /opt/winsdk/sdk  /vctoolsdir /opt/winsdk/crt /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /FoCMakeFiles/cmTC_54d70.dir/feature_tests.cxx.obj /FdCMakeFiles/cmTC_54d70.dir/ -c -- /opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-acd0yr/feature_tests.cxx
+        Linking CXX executable cmTC_54d70.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54d70.dir/link.txt --verbose=1
+        /usr/bin/cmake -E vs_link_exe --intdir=CMakeFiles/cmTC_54d70.dir --rc=/usr/bin/llvm-rc --mt=/usr/bin/llvm-mt --manifests -- /usr/bin/lld-link /nologo @CMakeFiles/cmTC_54d70.dir/objects1.rsp  /out:cmTC_54d70.exe /implib:cmTC_54d70.lib /pdb:/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-acd0yr/cmTC_54d70.pdb /version:0.0 /winsdkdir:/opt/winsdk/sdk  /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+        Visual Studio Incremental Link without manifests
+        LINK:
+        /usr/bin/lld-link /nologo @CMakeFiles/cmTC_54d70.dir/objects1.rsp /out:cmTC_54d70.exe /implib:cmTC_54d70.lib /pdb:/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-acd0yr/cmTC_54d70.pdb /version:0.0 /winsdkdir:/opt/winsdk/sdk /vctoolsdir:/opt/winsdk/crt /MANIFEST:NO /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+        gmake[1]: Leaving directory '/opt/winsdk/LLVM-Obfuscation-Experiments/capstone-5.0/buidlindirect/CMakeFiles/CMakeScratch/TryCompile-acd0yr'
+        
+      exitCode: 0
+...

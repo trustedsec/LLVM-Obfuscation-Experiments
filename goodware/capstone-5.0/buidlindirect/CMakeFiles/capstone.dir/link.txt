@@ -1,0 +1,1 @@
+/usr/bin/llvm-lib /nologo /machine:x64 /out:capstone.lib @CMakeFiles/capstone.dir/objects1.rsp 

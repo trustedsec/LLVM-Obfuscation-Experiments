@@ -1,0 +1,13 @@
+CFLAGS="-Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libStringObfuscation.so" cmake --toolchain /opt/winsdk/LLVM-Obfuscation-Experiments/clang-cl64.toolchain ..
+CFLAGS="-Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libMBAObfuscation.so -Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libIndirectCall.so -Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libFlattening.so -Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libBogusControlFlow.so" cmake --toolchain /opt/winsdk/LLVM-Obfuscation-Experiments/clang-cl64.toolchain ..
+
+
+---
+
+
+CFLAGS="-Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libMBAObfuscation.so" cmake --toolchain /opt/winsdk/LLVM-Obfuscation-Experiments/clang-cl64.toolchain ..
+CFLAGS="-Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libBogusControlFlow.so" cmake --toolchain /opt/winsdk/LLVM-Obfuscation-Experiments/clang-cl64.toolchain ..
+CFLAGS="-Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libFlattening.so" cmake --toolchain /opt/winsdk/LLVM-Obfuscation-Experiments/clang-cl64.toolchain ..
+CFLAGS="-Xclang -fpass-plugin=/opt/winsdk/llvm-passes/libIndirectCall.so" cmake --toolchain /opt/winsdk/LLVM-Obfuscation-Experiments/clang-cl64.toolchain ..
+
+#for mimikatz you need to modify the CMAKELists file to add the options to the mimikatz cmakelists.txt

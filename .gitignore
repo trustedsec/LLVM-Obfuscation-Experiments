@@ -1,0 +1,8 @@
+*.obj
+*.exe
+.vscode
+bin
+dist
+malware/arsenal-kit
+.git
+.pdb
