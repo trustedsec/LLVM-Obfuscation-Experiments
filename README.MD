@@ -1,4 +1,4 @@
-This repo is a companion document to the blog post available at \<url\>
+This repo is a companion document to the blog post available at https://trustedsec.com/blog/behind-the-code-assessing-public-compile-time-obfuscators-for-enhanced-opsec
 
 Individual projects under goodware / malware will have readme's referencing the original sources, which all all included here as well in no particular order.
 
